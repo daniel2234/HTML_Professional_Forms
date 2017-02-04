@@ -24,9 +24,108 @@
         <label for="text">Phone Number</label>
       </dt>
       <dd>
+        <select name="phone">
+          <optgroup label="Phone Type">
+            <option value="mobile">Mobile</option>
+            <option value="business">Business</option>
+            <option value="home" selected>Home</option>
+          </optgroup>
+        </select>
         <input type="tel" name="phone" id="phone" placeholder="(212) 555-1212" />
       </dd>
     </dl>
     <input type="submit" value="Send"/>
+  </fieldset>
+</form>
+
+
+<form action="" method="get">
+  <fieldset>
+    <h2>Categories</h2>
+    <ul>
+      <li>
+        <label>
+          <input type="radio" name="Core" />
+          Core
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="radio" name="plugins_and_libraries" />
+          Plugins and Libraries
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="radio" name="conventions" />
+          Conventions
+        </label>
+      </li>
+      <li>
+        <label>
+        <input type="radio" name="reviews">
+          Reviews
+        </label>
+      </li>
+      <li>
+        <label>
+        <input type="radio" name="opinion">
+          Opinion
+        </label>
+      </li>
+      <li>
+        <label>
+        <input type="radio" name="people">
+          People
+        </label>
+      </li>
+    </ul>
+    <h2>Tags</h2>
+<!-- Tags: HTML, CSS, Javascript, Ruby, Rails, Python, Django -->
+    <ul>
+      <li>
+        <label>
+          <input type="checkbox" name="tag_name" value="html" />
+          HTML
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="tag_name" value="css" />
+          CSS
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="tag_name" value="javascript" />
+          Javascript
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="tag_name" value="ruby" />
+          Ruby
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="tag_name" value="rails" />
+          Rails
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="tag_name" value="python" />
+          Python
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="tag_name" value="django" />
+          Django
+        </label>
+      </li>
+    </ul>
+  <input type="submit" name="submit" value="Filter">
   </fieldset>
 </form>
